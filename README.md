@@ -1,7 +1,7 @@
 <div align="center">
 
 # Emmanuel Ledesma
-### Cloud & Software Developer · Buenos Aires, Argentina
+### Cloud Engineer / DevOps · Buenos Aires, Argentina
 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Emmanuel_Ledesma-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/emmanuel-ledesmam)
@@ -13,16 +13,17 @@
 
 ## 👨‍💻 About Me
 
-I'm a tech professional transitioning from **10+ years of IBM experience** in IT education, digital transformation and technology adoption across Latin America — into hands-on **Cloud Engineering and Software Development**.
+I'm a tech professional with 10+ years of IBM experience in IT education, digital transformation and technology adoption across Latin America — Currently working on my profile to a Cloud Engineering and DevOps
 
 I don't just list skills. I build projects that prove them.
 
-- 🌩️ Building and deploying **serverless and containerized apps on AWS** (Lambda, ECS Fargate, ECR, S3, SAM)
+- 🌩️ Provisioning **AWS infrastructure as code** with Terraform and SAM/CloudFormation
 - 🐳 Containerizing applications with **Docker** and automating deploys with **GitHub Actions CI/CD**
+- ⚡ Building **event-driven pipelines** on AWS (Lambda, S3, SQS, SNS)
+- 🚀 Deploying **serverless and containerized apps** on AWS (Lambda, ECS Fargate, ECR)
 - 🐍 Writing **Python** for ETL pipelines, automation and backend logic
 - 🗄️ Designing **SQL databases** from scratch and writing complex queries
 - 🌐 Developing **REST APIs** and full-stack web applications
-- 🔧 Practicing **IaC** with AWS SAM / CloudFormation
 - 📦 Emulating cloud environments locally with **LocalStack + Docker**
 
 ---
@@ -31,6 +32,26 @@ I don't just list skills. I build projects that prove them.
 
 <table>
 <tr>
+<td width="50%" valign="top">
+
+### 🏗️ terraform-event-pipeline
+Event-driven AWS infrastructure provisioned 100% with Terraform.
+File upload to S3 triggers a Lambda that fans out to SQS and SNS — destroyed and recreated from scratch with a single command.
+
+**Highlights:**
+- Terraform modules: storage, messaging, compute
+- Remote state: S3 backend + DynamoDB locking
+- GitHub Actions CI/CD: plan on PR, apply on merge
+- 11 AWS resources provisioned as code ✅
+
+`Terraform` `AWS Lambda` `S3` `SQS` `SNS` `IAM` `GitHub Actions`
+
+[![Terraform Apply](https://github.com/EmmaLedesma/terraform-event-pipeline/actions/workflows/terraform-apply.yml/badge.svg)](https://github.com/EmmaLedesma/terraform-event-pipeline/actions/workflows/terraform-apply.yml)
+[![Terraform Plan](https://github.com/EmmaLedesma/terraform-event-pipeline/actions/workflows/terraform-plan.yml/badge.svg)](https://github.com/EmmaLedesma/terraform-event-pipeline/actions/workflows/terraform-plan.yml)
+
+🔗 [Repo](https://github.com/EmmaLedesma/terraform-event-pipeline)
+
+</td>
 <td width="50%" valign="top">
 
 ### ☁️ cloud-file-api
@@ -53,6 +74,8 @@ Manages files on S3 with automated build, test and deploy on every change.
 🔗 [API](http://3.84.95.162:3000/health) · [Repo](https://github.com/EmmaLedesma/cloud-file-api)
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### 🔮 Shem 72 – Angel Calculator
@@ -70,8 +93,6 @@ Calculates 3 guardian angels using the Kabbalistic method.
 🔗 [Live App](http://shem72-app.s3-website-us-east-1.amazonaws.com) · [Repo](https://github.com/EmmaLedesma/calculadora-72-nombres)
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### 🏗️ LocalStack DevOps Project
@@ -89,21 +110,6 @@ Demonstrates real AWS workflows without cloud costs.
 🔗 [Repo](https://github.com/EmmaLedesma/localstack-devops-project)
 
 </td>
-<td width="50%" valign="top">
-
-### 🗄️ SQL Progressive Exercises
-20 SQL exercises across 3 difficulty levels simulating a retail database.
-
-**Highlights:**
-- Basic → Intermediate → Advanced
-- JOINs, subqueries, aggregations
-- Window functions ✅
-
-`T-SQL`
-
-🔗 [Repo](https://github.com/EmmaLedesma/sql-ejercicios-tienda)
-
-</td>
 </tr>
 </table>
 
@@ -113,6 +119,7 @@ Demonstrates real AWS workflows without cloud costs.
 
 **Cloud & DevOps**
 ![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
 ![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=flat-square&logo=aws-lambda&logoColor=white)
 ![ECS](https://img.shields.io/badge/ECS_Fargate-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
 ![ECR](https://img.shields.io/badge/ECR-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
@@ -144,15 +151,18 @@ Demonstrates real AWS workflows without cloud costs.
 | Docker + docker-compose | ✅ Completed | [cloud-file-api](https://github.com/EmmaLedesma/cloud-file-api) |
 | GitHub Actions CI/CD | ✅ Completed | [cloud-file-api](https://github.com/EmmaLedesma/cloud-file-api) |
 | AWS ECS Fargate + ECR | ✅ Completed | [cloud-file-api](https://github.com/EmmaLedesma/cloud-file-api) |
-| Terraform basics | 📋 Planned | `terraform-aws-labs` |
-| Azure fundamentals | 📋 Planned | `azure-labs` |
+| Terraform IaC | ✅ Completed | [terraform-event-pipeline](https://github.com/EmmaLedesma/terraform-event-pipeline) |
+| Terraform advanced (VPC + EC2 + RDS) | 🔨 Next | `terraform-aws-infra` |
+| Kubernetes (EKS) | 📋 Planned | `eks-labs` |
+| GCP fundamentals | 📋 Planned | `gcp-labs` |
+| Multi-cloud (AWS + GCP) | 📋 Planned | `multicloud-pipeline` |
 
 ---
 
 ## 🎓 Background
 
 - 💼 **IBM** — 10+ years · IT Education, Digital Transformation, Tech Adoption · LATAM
-- 🏫 **IFTS N°18** — Técnico Superior en Análisis de Sistemas (TSAS) 
+- 🏫 **IFTS N°18** — Técnico Superior en Análisis de Sistemas (TSAS)
 - 🏫 **Universidad de la Ciudad de Buenos Aires** — Licenciatura en Tecnologías Digitales · Articulando
 - 📍 Buenos Aires, Argentina
 
@@ -163,7 +173,7 @@ Demonstrates real AWS workflows without cloud costs.
 <div align="center">
 
 # Emmanuel Ledesma
-### Desarrollador Cloud & Software · Buenos Aires, Argentina
+### Cloud Engineer / DevOps · Buenos Aires, Argentina
 
 </div>
 
@@ -171,16 +181,17 @@ Demonstrates real AWS workflows without cloud costs.
 
 ## 👨‍💻 Sobre mí
 
-Profesional técnico en transición desde **10+ años de experiencia en IBM** — educación IT, transformación digital y adopción tecnológica en América Latina — hacia **Cloud Engineering y Software Development** hands-on.
+Soy un profesional técnico con 10+ años de experiencia en IBM en educación IT, transformación digital y adopción tecnológica en América Latina — Actualmente trabajando en mi perfil hacia Cloud Engineering y DevOps.
 
 No listo habilidades sin respaldo. Construyo proyectos que las demuestran.
 
-- 🌩️ Deployando **apps serverless y containerizadas en AWS** (Lambda, ECS Fargate, ECR, S3, SAM)
+- 🌩️ Provisionando **infraestructura AWS como código** con Terraform y SAM/CloudFormation
 - 🐳 Containerizando aplicaciones con **Docker** y automatizando deploys con **GitHub Actions CI/CD**
+- ⚡ Construyendo **pipelines event-driven** en AWS (Lambda, S3, SQS, SNS)
+- 🚀 Deployando **apps serverless y containerizadas** en AWS (Lambda, ECS Fargate, ECR)
 - 🐍 Escribiendo **Python** para ETL, automatización y lógica backend
 - 🗄️ Diseñando **bases de datos SQL** y consultas complejas
 - 🌐 Desarrollando **REST APIs** y aplicaciones web full-stack
-- 🔧 Practicando **IaC** con AWS SAM / CloudFormation
 - 📦 Emulando entornos cloud locales con **LocalStack + Docker**
 
 ---
@@ -189,6 +200,26 @@ No listo habilidades sin respaldo. Construyo proyectos que las demuestran.
 
 <table>
 <tr>
+<td width="50%" valign="top">
+
+### 🏗️ terraform-event-pipeline
+Infraestructura event-driven en AWS provisionada 100% con Terraform.
+La subida de un archivo a S3 dispara una Lambda que distribuye el evento a SQS y SNS — destruida y recreada desde cero con un solo comando.
+
+**Destacado:**
+- Módulos Terraform: storage, messaging, compute
+- Estado remoto: S3 backend + DynamoDB locking
+- GitHub Actions CI/CD: plan en PR, apply en merge
+- 11 recursos AWS provisionados como código ✅
+
+`Terraform` `AWS Lambda` `S3` `SQS` `SNS` `IAM` `GitHub Actions`
+
+[![Terraform Apply](https://github.com/EmmaLedesma/terraform-event-pipeline/actions/workflows/terraform-apply.yml/badge.svg)](https://github.com/EmmaLedesma/terraform-event-pipeline/actions/workflows/terraform-apply.yml)
+[![Terraform Plan](https://github.com/EmmaLedesma/terraform-event-pipeline/actions/workflows/terraform-plan.yml/badge.svg)](https://github.com/EmmaLedesma/terraform-event-pipeline/actions/workflows/terraform-plan.yml)
+
+🔗 [Repo](https://github.com/EmmaLedesma/terraform-event-pipeline)
+
+</td>
 <td width="50%" valign="top">
 
 ### ☁️ cloud-file-api
@@ -211,6 +242,8 @@ Gestiona archivos en S3 con build, test y deploy automatizados en cada cambio.
 🔗 [API](http://3.84.95.162:3000/health) · [Repo](https://github.com/EmmaLedesma/cloud-file-api)
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### 🔮 Shem 72 – Calculadora de Ángeles
@@ -228,8 +261,6 @@ Calcula 3 ángeles guardianes usando el método cabalístico.
 🔗 [App en vivo](http://shem72-app.s3-website-us-east-1.amazonaws.com) · [Repo](https://github.com/EmmaLedesma/calculadora-72-nombres)
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### 🏗️ LocalStack DevOps Project
@@ -247,21 +278,6 @@ Demuestra flujos reales de AWS sin costos en la nube.
 🔗 [Repo](https://github.com/EmmaLedesma/localstack-devops-project)
 
 </td>
-<td width="50%" valign="top">
-
-### 🗄️ SQL — Ejercicios Progresivos
-20 ejercicios SQL en 3 niveles de dificultad simulando una base de datos retail.
-
-**Destacado:**
-- Básico → Intermedio → Avanzado
-- JOINs, subconsultas, agregaciones
-- Window functions ✅
-
-`T-SQL`
-
-🔗 [Repo](https://github.com/EmmaLedesma/sql-ejercicios-tienda)
-
-</td>
 </tr>
 </table>
 
@@ -271,6 +287,7 @@ Demuestra flujos reales de AWS sin costos en la nube.
 
 **Cloud & DevOps**
 ![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
 ![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=flat-square&logo=aws-lambda&logoColor=white)
 ![ECS](https://img.shields.io/badge/ECS_Fargate-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
 ![ECR](https://img.shields.io/badge/ECR-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
@@ -302,15 +319,18 @@ Demuestra flujos reales de AWS sin costos en la nube.
 | Docker + docker-compose | ✅ Completado | [cloud-file-api](https://github.com/EmmaLedesma/cloud-file-api) |
 | GitHub Actions CI/CD | ✅ Completado | [cloud-file-api](https://github.com/EmmaLedesma/cloud-file-api) |
 | AWS ECS Fargate + ECR | ✅ Completado | [cloud-file-api](https://github.com/EmmaLedesma/cloud-file-api) |
-| Terraform básico | 📋 Planificado | `terraform-aws-labs` |
-| Azure fundamentals | 📋 Planificado | `azure-labs` |
+| Terraform IaC | ✅ Completado | [terraform-event-pipeline](https://github.com/EmmaLedesma/terraform-event-pipeline) |
+| Terraform avanzado (VPC + EC2 + RDS) | 🔨 Próximo | `terraform-aws-infra` |
+| Kubernetes (EKS) | 📋 Planificado | `eks-labs` |
+| GCP fundamentals | 📋 Planificado | `gcp-labs` |
+| Multi-cloud (AWS + GCP) | 📋 Planificado | `multicloud-pipeline` |
 
 ---
 
 ## 🎓 Trayectoria
 
 - 💼 **IBM** — 10+ años · Educación IT, Transformación Digital · LATAM
-- 🏫 **IFTS N°18** — Técnico Superior en Análisis de Sistemas (TSAS) 
+- 🏫 **IFTS N°18** — Técnico Superior en Análisis de Sistemas (TSAS)
 - 🏫 **Universidad de la Ciudad de Buenos Aires** — Licenciatura en Tecnologías Digitales · Articulando
 - 📍 Buenos Aires, Argentina
 
