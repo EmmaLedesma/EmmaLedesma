@@ -1,8 +1,8 @@
 <div align="center">
 
 # Emmanuel Ledesma
-### Cloud Engineer / DevOps · Buenos Aires, Argentina
-
+### Cloud Engineering & DevOps · Buenos Aires, Argentina
+#### Transitioning from 10+ years in IBM → Building in public
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Emmanuel_Ledesma-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/emmanuel-ledesmam)
 [![GitHub](https://img.shields.io/badge/GitHub-EmmaLedesma-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/EmmaLedesma)
@@ -13,7 +13,7 @@
 
 ## 👨‍💻 About Me
 
-I'm a tech professional with 10+ years of IBM experience in IT education, digital transformation and technology adoption across Latin America — Currently working on my profile to a Cloud Engineering and DevOps
+I'm a tech professional with 10+ years of IBM experience in IT education, digital transformation and technology adoption across Latin America — currently transitioning into Cloud Engineering and DevOps by building real projects from scratch.
 
 I don't just list skills. I build projects that prove them.
 
@@ -21,6 +21,7 @@ I don't just list skills. I build projects that prove them.
 - 🐳 Containerizing applications with **Docker** and automating deploys with **GitHub Actions CI/CD**
 - ⚡ Building **event-driven pipelines** on AWS (Lambda, S3, SQS, SNS)
 - 🚀 Deploying **serverless and containerized apps** on AWS (Lambda, ECS Fargate, ECR)
+- 🤖 Integrating **Generative AI** via AWS Bedrock (Claude, Converse API)
 - 🐍 Writing **Python** for ETL pipelines, automation and backend logic
 - 🗄️ Designing **SQL databases** from scratch and writing complex queries
 - 🌐 Developing **REST APIs** and full-stack web applications
@@ -32,6 +33,30 @@ I don't just list skills. I build projects that prove them.
 
 <table>
 <tr>
+<td width="50%" valign="top">
+
+### 🎬 yt-summarizer
+AI-powered YouTube video summarizer — fully serverless on AWS.
+Paste a URL, pick a language, and Claude AI returns a structured summary with key points, topics and content type. Results cached in DynamoDB.
+
+**Highlights:**
+- AWS Bedrock (Claude 3.5 Haiku) via Converse API
+- Lambda + API Gateway + DynamoDB + S3 + CloudFront
+- Transcript extraction via Supadata API (browser-side)
+- Language selector (ES, EN, PT and more)
+- CloudWatch Dashboard + Alarms as code
+- GitHub Actions CI/CD: auto deploy on push
+- 100% Terraform IaC ✅
+
+`Python` `AWS Bedrock` `Lambda` `DynamoDB` `CloudFront` `Terraform` `GitHub Actions`
+
+[![CI Frontend](https://github.com/EmmaLedesma/youtube-summarizer/actions/workflows/deploy-frontend.yml/badge.svg)](https://github.com/EmmaLedesma/youtube-summarizer/actions/workflows/deploy-frontend.yml)
+[![CI Backend](https://github.com/EmmaLedesma/youtube-summarizer/actions/workflows/deploy-backend.yml/badge.svg)](https://github.com/EmmaLedesma/youtube-summarizer/actions/workflows/deploy-backend.yml)
+[![Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://d21n43yg7hlxxz.cloudfront.net)
+
+🔗 [Live Demo](https://d21n43yg7hlxxz.cloudfront.net) · [Repo](https://github.com/EmmaLedesma/youtube-summarizer)
+
+</td>
 <td width="50%" valign="top">
 
 ### 🏗️ terraform-event-pipeline
@@ -52,6 +77,8 @@ File upload to S3 triggers a Lambda that fans out to SQS and SNS — destroyed a
 🔗 [Repo](https://github.com/EmmaLedesma/terraform-event-pipeline)
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### ☁️ cloud-file-api
@@ -74,8 +101,6 @@ Manages files on S3 with automated build, test and deploy on every change.
 🔗 [API](http://3.84.95.162:3000/health) · [Repo](https://github.com/EmmaLedesma/cloud-file-api)
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### 🔮 Shem 72 – Angel Calculator
@@ -93,23 +118,6 @@ Calculates 3 guardian angels using the Kabbalistic method.
 🔗 [Live App](http://shem72-app.s3-website-us-east-1.amazonaws.com) · [Repo](https://github.com/EmmaLedesma/calculadora-72-nombres)
 
 </td>
-<td width="50%" valign="top">
-
-### 🏗️ LocalStack DevOps Project
-Local AWS cloud emulation lab with LocalStack & AWS CLI.
-Demonstrates real AWS workflows without cloud costs.
-
-**Highlights:**
-- S3, DynamoDB, Lambda, IAM locally
-- Scripted with Python and Bash
-- Docker-based environment
-- Documented step by step ✅
-
-`Python` `LocalStack` `AWS CLI` `Docker` `Bash`
-
-🔗 [Repo](https://github.com/EmmaLedesma/localstack-devops-project)
-
-</td>
 </tr>
 </table>
 
@@ -121,6 +129,7 @@ Demonstrates real AWS workflows without cloud costs.
 ![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
 ![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=flat-square&logo=aws-lambda&logoColor=white)
+![Bedrock](https://img.shields.io/badge/AWS_Bedrock-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
 ![ECS](https://img.shields.io/badge/ECS_Fargate-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
 ![ECR](https://img.shields.io/badge/ECR-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
@@ -152,7 +161,8 @@ Demonstrates real AWS workflows without cloud costs.
 | GitHub Actions CI/CD | ✅ Completed | [cloud-file-api](https://github.com/EmmaLedesma/cloud-file-api) |
 | AWS ECS Fargate + ECR | ✅ Completed | [cloud-file-api](https://github.com/EmmaLedesma/cloud-file-api) |
 | Terraform IaC | ✅ Completed | [terraform-event-pipeline](https://github.com/EmmaLedesma/terraform-event-pipeline) |
-| Terraform advanced (VPC + EC2 + RDS) | 🔨 Next | `terraform-aws-infra` |
+| AWS Bedrock + Generative AI | ✅ Completed | [yt-summarizer](https://github.com/EmmaLedesma/youtube-summarizer) |
+| Terraform avanzado (VPC + EC2 + RDS) | 🔨 Next | `terraform-aws-infra` |
 | Kubernetes (EKS) | 📋 Planned | `eks-labs` |
 | GCP fundamentals | 📋 Planned | `gcp-labs` |
 | Multi-cloud (AWS + GCP) | 📋 Planned | `multicloud-pipeline` |
@@ -168,12 +178,11 @@ Demonstrates real AWS workflows without cloud costs.
 
 ---
 
----
-
 <div align="center">
 
 # Emmanuel Ledesma
-### Cloud Engineer / DevOps · Buenos Aires, Argentina
+### Cloud Engineering & DevOps · Buenos Aires, Argentina
+#### Transitioning from 10+ years in IBM → Building in public
 
 </div>
 
@@ -181,7 +190,7 @@ Demonstrates real AWS workflows without cloud costs.
 
 ## 👨‍💻 Sobre mí
 
-Soy un profesional técnico con 10+ años de experiencia en IBM en educación IT, transformación digital y adopción tecnológica en América Latina — Actualmente trabajando en mi perfil hacia Cloud Engineering y DevOps.
+Soy un profesional técnico con 10+ años de experiencia en IBM en educación IT, transformación digital y adopción tecnológica en América Latina — actualmente en transición hacia Cloud Engineering y DevOps construyendo proyectos reales desde cero.
 
 No listo habilidades sin respaldo. Construyo proyectos que las demuestran.
 
@@ -189,6 +198,7 @@ No listo habilidades sin respaldo. Construyo proyectos que las demuestran.
 - 🐳 Containerizando aplicaciones con **Docker** y automatizando deploys con **GitHub Actions CI/CD**
 - ⚡ Construyendo **pipelines event-driven** en AWS (Lambda, S3, SQS, SNS)
 - 🚀 Deployando **apps serverless y containerizadas** en AWS (Lambda, ECS Fargate, ECR)
+- 🤖 Integrando **IA Generativa** via AWS Bedrock (Claude, Converse API)
 - 🐍 Escribiendo **Python** para ETL, automatización y lógica backend
 - 🗄️ Diseñando **bases de datos SQL** y consultas complejas
 - 🌐 Desarrollando **REST APIs** y aplicaciones web full-stack
@@ -200,6 +210,30 @@ No listo habilidades sin respaldo. Construyo proyectos que las demuestran.
 
 <table>
 <tr>
+<td width="50%" valign="top">
+
+### 🎬 yt-summarizer
+Resumidor de videos de YouTube con IA — serverless end-to-end en AWS.
+Pegás una URL, elegís el idioma, y Claude AI devuelve un resumen estructurado con puntos clave, tópicos y tipo de contenido. Resultados cacheados en DynamoDB.
+
+**Destacado:**
+- AWS Bedrock (Claude 3.5 Haiku) via Converse API
+- Lambda + API Gateway + DynamoDB + S3 + CloudFront
+- Extracción de transcript via Supadata API (browser-side)
+- Selector de idioma (ES, EN, PT y más)
+- CloudWatch Dashboard + Alarms como código
+- GitHub Actions CI/CD: deploy automático en push
+- 100% Terraform IaC ✅
+
+`Python` `AWS Bedrock` `Lambda` `DynamoDB` `CloudFront` `Terraform` `GitHub Actions`
+
+[![CI Frontend](https://github.com/EmmaLedesma/youtube-summarizer/actions/workflows/deploy-frontend.yml/badge.svg)](https://github.com/EmmaLedesma/youtube-summarizer/actions/workflows/deploy-frontend.yml)
+[![CI Backend](https://github.com/EmmaLedesma/youtube-summarizer/actions/workflows/deploy-backend.yml/badge.svg)](https://github.com/EmmaLedesma/youtube-summarizer/actions/workflows/deploy-backend.yml)
+[![Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://d21n43yg7hlxxz.cloudfront.net)
+
+🔗 [Demo en vivo](https://d21n43yg7hlxxz.cloudfront.net) · [Repo](https://github.com/EmmaLedesma/youtube-summarizer)
+
+</td>
 <td width="50%" valign="top">
 
 ### 🏗️ terraform-event-pipeline
@@ -220,6 +254,8 @@ La subida de un archivo a S3 dispara una Lambda que distribuye el evento a SQS y
 🔗 [Repo](https://github.com/EmmaLedesma/terraform-event-pipeline)
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### ☁️ cloud-file-api
@@ -242,8 +278,6 @@ Gestiona archivos en S3 con build, test y deploy automatizados en cada cambio.
 🔗 [API](http://3.84.95.162:3000/health) · [Repo](https://github.com/EmmaLedesma/cloud-file-api)
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### 🔮 Shem 72 – Calculadora de Ángeles
@@ -261,23 +295,6 @@ Calcula 3 ángeles guardianes usando el método cabalístico.
 🔗 [App en vivo](http://shem72-app.s3-website-us-east-1.amazonaws.com) · [Repo](https://github.com/EmmaLedesma/calculadora-72-nombres)
 
 </td>
-<td width="50%" valign="top">
-
-### 🏗️ LocalStack DevOps Project
-Lab de emulación de AWS local con LocalStack y AWS CLI.
-Demuestra flujos reales de AWS sin costos en la nube.
-
-**Destacado:**
-- S3, DynamoDB, Lambda, IAM en local
-- Scripts en Python y Bash
-- Entorno basado en Docker
-- Documentado paso a paso ✅
-
-`Python` `LocalStack` `AWS CLI` `Docker` `Bash`
-
-🔗 [Repo](https://github.com/EmmaLedesma/localstack-devops-project)
-
-</td>
 </tr>
 </table>
 
@@ -289,6 +306,7 @@ Demuestra flujos reales de AWS sin costos en la nube.
 ![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
 ![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=flat-square&logo=aws-lambda&logoColor=white)
+![Bedrock](https://img.shields.io/badge/AWS_Bedrock-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
 ![ECS](https://img.shields.io/badge/ECS_Fargate-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
 ![ECR](https://img.shields.io/badge/ECR-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
@@ -320,6 +338,7 @@ Demuestra flujos reales de AWS sin costos en la nube.
 | GitHub Actions CI/CD | ✅ Completado | [cloud-file-api](https://github.com/EmmaLedesma/cloud-file-api) |
 | AWS ECS Fargate + ECR | ✅ Completado | [cloud-file-api](https://github.com/EmmaLedesma/cloud-file-api) |
 | Terraform IaC | ✅ Completado | [terraform-event-pipeline](https://github.com/EmmaLedesma/terraform-event-pipeline) |
+| AWS Bedrock + IA Generativa | ✅ Completado | [yt-summarizer](https://github.com/EmmaLedesma/youtube-summarizer) |
 | Terraform avanzado (VPC + EC2 + RDS) | 🔨 Próximo | `terraform-aws-infra` |
 | Kubernetes (EKS) | 📋 Planificado | `eks-labs` |
 | GCP fundamentals | 📋 Planificado | `gcp-labs` |
