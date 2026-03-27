@@ -17,11 +17,11 @@ I'm a tech professional with 10+ years of IBM experience in IT education, digita
 
 I don't just list skills. I build projects that prove them.
 
-- 🌩️ Provisioning **AWS infrastructure as code** with Terraform and SAM/CloudFormation
+- 🌩️ Provisioning **AWS and GCP infrastructure as code** with Terraform
 - 🐳 Containerizing applications with **Docker** and automating deploys with **GitHub Actions CI/CD**
-- ⚡ Building **event-driven pipelines** on AWS (Lambda, S3, SQS, SNS)
-- 🚀 Deploying **serverless and containerized apps** on AWS (Lambda, ECS Fargate, ECR)
-- 🤖 Integrating **Generative AI** via AWS Bedrock (Claude, Converse API)
+- ⚡ Building **event-driven pipelines** on AWS (Lambda, S3, SQS, SNS) and GCP (Pub/Sub, Cloud Functions)
+- 🚀 Deploying **serverless and containerized apps** on AWS (Lambda, ECS Fargate) and GCP (Cloud Run)
+- 🤖 Integrating **Generative AI** via AWS Bedrock (Claude) and GCP Vertex AI (Gemini)
 - 🐍 Writing **Python** for ETL pipelines, automation and backend logic
 - 🗄️ Designing **SQL databases** from scratch and writing complex queries
 - 🌐 Developing **REST APIs** and full-stack web applications
@@ -33,6 +33,26 @@ I don't just list skills. I build projects that prove them.
 
 <table>
 <tr>
+<td width="50%" valign="top">
+
+### 🤖 cloud-portfolio-agent
+Conversational AI agent deployed on GCP that answers questions about my professional profile using RAG over real portfolio documents.
+
+**Highlights:**
+- Vertex AI Search (RAG) + Gemini 2.5 Flash
+- Cloud Run (Python/FastAPI) + Cloud Functions
+- Pub/Sub event-driven document ingestion
+- BigQuery conversation analytics
+- Workload Identity Federation (keyless CI/CD)
+- 100% Terraform IaC — modular ✅
+
+`Python` `GCP` `Vertex AI` `Gemini` `Cloud Run` `Terraform` `GitHub Actions`
+
+[![Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://emmaledesma.github.io/cloud-portfolio-agent/)
+
+🔗 [Live Demo](https://emmaledesma.github.io/cloud-portfolio-agent/) · [Repo](https://github.com/EmmaLedesma/cloud-portfolio-agent)
+
+</td>
 <td width="50%" valign="top">
 
 ### 🎬 yt-summarizer
@@ -57,6 +77,8 @@ Paste a URL, pick a language, and Claude AI returns a structured summary with ke
 🔗 [Live Demo](https://d21n43yg7hlxxz.cloudfront.net) · [Repo](https://github.com/EmmaLedesma/youtube-summarizer)
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### 🏗️ terraform-event-pipeline
@@ -77,8 +99,6 @@ File upload to S3 triggers a Lambda that fans out to SQS and SNS — destroyed a
 🔗 [Repo](https://github.com/EmmaLedesma/terraform-event-pipeline)
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### ☁️ cloud-file-api
@@ -101,23 +121,6 @@ Manages files on S3 with automated build, test and deploy on every change.
 🔗 [API](http://3.84.95.162:3000/health) · [Repo](https://github.com/EmmaLedesma/cloud-file-api)
 
 </td>
-<td width="50%" valign="top">
-
-### 🔮 Shem 72 – Angel Calculator
-Full-stack serverless app deployed on AWS.
-Calculates 3 guardian angels using the Kabbalistic method.
-
-**Highlights:**
-- AWS Lambda + API Gateway + S3
-- SAM / CloudFormation (IaC)
-- Custom REST API in Node.js/Express
-- Live deployed ✅
-
-`Node.js` `AWS Lambda` `S3` `SAM` `REST API`
-
-🔗 [Live App](http://shem72-app.s3-website-us-east-1.amazonaws.com) · [Repo](https://github.com/EmmaLedesma/calculadora-72-nombres)
-
-</td>
 </tr>
 </table>
 
@@ -127,15 +130,16 @@ Calculates 3 guardian angels using the Kabbalistic method.
 
 **Cloud & DevOps**
 ![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
+![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
-![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=flat-square&logo=aws-lambda&logoColor=white)
-![Bedrock](https://img.shields.io/badge/AWS_Bedrock-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
-![ECS](https://img.shields.io/badge/ECS_Fargate-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
-![ECR](https://img.shields.io/badge/ECR-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
+![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=flat-square&logo=aws-lambda&logoColor=white)
+![Cloud Run](https://img.shields.io/badge/Cloud_Run-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
+![ECS](https://img.shields.io/badge/ECS_Fargate-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
+![Bedrock](https://img.shields.io/badge/AWS_Bedrock-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
+![Vertex AI](https://img.shields.io/badge/Vertex_AI-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
 ![LocalStack](https://img.shields.io/badge/LocalStack-000000?style=flat-square&logo=localstack&logoColor=white)
-![CloudFormation](https://img.shields.io/badge/CloudFormation-FF4F00?style=flat-square&logo=amazon-aws&logoColor=white)
 
 **Languages**
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
@@ -162,10 +166,12 @@ Calculates 3 guardian angels using the Kabbalistic method.
 | AWS ECS Fargate + ECR | ✅ Completed | [cloud-file-api](https://github.com/EmmaLedesma/cloud-file-api) |
 | Terraform IaC | ✅ Completed | [terraform-event-pipeline](https://github.com/EmmaLedesma/terraform-event-pipeline) |
 | AWS Bedrock + Generative AI | ✅ Completed | [yt-summarizer](https://github.com/EmmaLedesma/youtube-summarizer) |
-| Terraform avanzado (VPC + EC2 + RDS) | 🔨 Next | `terraform-aws-infra` |
-| Kubernetes (EKS) | 📋 Planned | `eks-labs` |
-| GCP fundamentals | 📋 Planned | `gcp-labs` |
-| Multi-cloud (AWS + GCP) | 📋 Planned | `multicloud-pipeline` |
+| GCP + Vertex AI + Gemini + RAG | ✅ Completed | [cloud-portfolio-agent](https://github.com/EmmaLedesma/cloud-portfolio-agent) |
+| Azure fundamentals | 🔨 Next | `azure-labs` |
+| Kubernetes (EKS / GKE) | 📋 Planned | `kubernetes-labs` |
+| Jenkins CI/CD | 📋 Planned | `jenkins-pipeline` |
+| IBM Cloud | 📋 Planned | `ibm-cloud-labs` |
+| Multi-cloud (AWS + GCP + Azure) | 📋 Planned | `multicloud-pipeline` |
 
 ---
 
@@ -194,11 +200,11 @@ Soy un profesional técnico con 10+ años de experiencia en IBM en educación IT
 
 No listo habilidades sin respaldo. Construyo proyectos que las demuestran.
 
-- 🌩️ Provisionando **infraestructura AWS como código** con Terraform y SAM/CloudFormation
+- 🌩️ Provisionando **infraestructura AWS y GCP como código** con Terraform
 - 🐳 Containerizando aplicaciones con **Docker** y automatizando deploys con **GitHub Actions CI/CD**
-- ⚡ Construyendo **pipelines event-driven** en AWS (Lambda, S3, SQS, SNS)
-- 🚀 Deployando **apps serverless y containerizadas** en AWS (Lambda, ECS Fargate, ECR)
-- 🤖 Integrando **IA Generativa** via AWS Bedrock (Claude, Converse API)
+- ⚡ Construyendo **pipelines event-driven** en AWS (Lambda, S3, SQS, SNS) y GCP (Pub/Sub, Cloud Functions)
+- 🚀 Deployando **apps serverless y containerizadas** en AWS (Lambda, ECS Fargate) y GCP (Cloud Run)
+- 🤖 Integrando **IA Generativa** via AWS Bedrock (Claude) y GCP Vertex AI (Gemini)
 - 🐍 Escribiendo **Python** para ETL, automatización y lógica backend
 - 🗄️ Diseñando **bases de datos SQL** y consultas complejas
 - 🌐 Desarrollando **REST APIs** y aplicaciones web full-stack
@@ -210,6 +216,26 @@ No listo habilidades sin respaldo. Construyo proyectos que las demuestran.
 
 <table>
 <tr>
+<td width="50%" valign="top">
+
+### 🤖 cloud-portfolio-agent
+Agente conversacional deployado en GCP que responde preguntas sobre mi perfil profesional usando RAG sobre documentos reales del portfolio.
+
+**Destacado:**
+- Vertex AI Search (RAG) + Gemini 2.5 Flash
+- Cloud Run (Python/FastAPI) + Cloud Functions
+- Ingesta de documentos event-driven via Pub/Sub
+- Analytics de conversaciones en BigQuery
+- Workload Identity Federation (CI/CD keyless)
+- 100% Terraform IaC — modular ✅
+
+`Python` `GCP` `Vertex AI` `Gemini` `Cloud Run` `Terraform` `GitHub Actions`
+
+[![Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://emmaledesma.github.io/cloud-portfolio-agent/)
+
+🔗 [Demo en vivo](https://emmaledesma.github.io/cloud-portfolio-agent/) · [Repo](https://github.com/EmmaLedesma/cloud-portfolio-agent)
+
+</td>
 <td width="50%" valign="top">
 
 ### 🎬 yt-summarizer
@@ -234,6 +260,8 @@ Pegás una URL, elegís el idioma, y Claude AI devuelve un resumen estructurado 
 🔗 [Demo en vivo](https://d21n43yg7hlxxz.cloudfront.net) · [Repo](https://github.com/EmmaLedesma/youtube-summarizer)
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### 🏗️ terraform-event-pipeline
@@ -254,8 +282,6 @@ La subida de un archivo a S3 dispara una Lambda que distribuye el evento a SQS y
 🔗 [Repo](https://github.com/EmmaLedesma/terraform-event-pipeline)
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### ☁️ cloud-file-api
@@ -278,23 +304,6 @@ Gestiona archivos en S3 con build, test y deploy automatizados en cada cambio.
 🔗 [API](http://3.84.95.162:3000/health) · [Repo](https://github.com/EmmaLedesma/cloud-file-api)
 
 </td>
-<td width="50%" valign="top">
-
-### 🔮 Shem 72 – Calculadora de Ángeles
-App serverless full-stack deployada en AWS.
-Calcula 3 ángeles guardianes usando el método cabalístico.
-
-**Destacado:**
-- AWS Lambda + API Gateway + S3
-- SAM / CloudFormation (IaC)
-- REST API propia en Node.js/Express
-- Deployada y funcionando ✅
-
-`Node.js` `AWS Lambda` `S3` `SAM` `REST API`
-
-🔗 [App en vivo](http://shem72-app.s3-website-us-east-1.amazonaws.com) · [Repo](https://github.com/EmmaLedesma/calculadora-72-nombres)
-
-</td>
 </tr>
 </table>
 
@@ -304,15 +313,16 @@ Calcula 3 ángeles guardianes usando el método cabalístico.
 
 **Cloud & DevOps**
 ![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
+![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
-![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=flat-square&logo=aws-lambda&logoColor=white)
-![Bedrock](https://img.shields.io/badge/AWS_Bedrock-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
-![ECS](https://img.shields.io/badge/ECS_Fargate-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
-![ECR](https://img.shields.io/badge/ECR-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
+![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=flat-square&logo=aws-lambda&logoColor=white)
+![Cloud Run](https://img.shields.io/badge/Cloud_Run-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
+![ECS](https://img.shields.io/badge/ECS_Fargate-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
+![Bedrock](https://img.shields.io/badge/AWS_Bedrock-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
+![Vertex AI](https://img.shields.io/badge/Vertex_AI-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
 ![LocalStack](https://img.shields.io/badge/LocalStack-000000?style=flat-square&logo=localstack&logoColor=white)
-![CloudFormation](https://img.shields.io/badge/CloudFormation-FF4F00?style=flat-square&logo=amazon-aws&logoColor=white)
 
 **Lenguajes**
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
@@ -339,10 +349,12 @@ Calcula 3 ángeles guardianes usando el método cabalístico.
 | AWS ECS Fargate + ECR | ✅ Completado | [cloud-file-api](https://github.com/EmmaLedesma/cloud-file-api) |
 | Terraform IaC | ✅ Completado | [terraform-event-pipeline](https://github.com/EmmaLedesma/terraform-event-pipeline) |
 | AWS Bedrock + IA Generativa | ✅ Completado | [yt-summarizer](https://github.com/EmmaLedesma/youtube-summarizer) |
-| Terraform avanzado (VPC + EC2 + RDS) | 🔨 Próximo | `terraform-aws-infra` |
-| Kubernetes (EKS) | 📋 Planificado | `eks-labs` |
-| GCP fundamentals | 📋 Planificado | `gcp-labs` |
-| Multi-cloud (AWS + GCP) | 📋 Planificado | `multicloud-pipeline` |
+| GCP + Vertex AI + Gemini + RAG | ✅ Completado | [cloud-portfolio-agent](https://github.com/EmmaLedesma/cloud-portfolio-agent) |
+| Azure fundamentals | 🔨 Próximo | `azure-labs` |
+| Kubernetes (EKS / GKE) | 📋 Planificado | `kubernetes-labs` |
+| Jenkins CI/CD | 📋 Planificado | `jenkins-pipeline` |
+| IBM Cloud | 📋 Planificado | `ibm-cloud-labs` |
+| Multi-cloud (AWS + GCP + Azure) | 📋 Planificado | `multicloud-pipeline` |
 
 ---
 
