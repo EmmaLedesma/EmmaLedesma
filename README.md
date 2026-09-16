@@ -180,7 +180,7 @@ Manages files on S3 with automated build, test and deploy on every change.
 - 💼 **IBM** — 10+ years · IT Education, Digital Transformation, Tech Adoption · LATAM
 - 🏫 **IFTS N°18** — Técnico Superior en Análisis de Sistemas (TSAS)
 - 🏫 **Universidad de la Ciudad de Buenos Aires** — Licenciatura en Tecnologías Digitales · Articulando
-- 🏫 **Universidad de Buenos Aires** — Ingeniería en Informatica · EN Curso
+- 🏫 **Universidad de Buenos Aires** — Ingeniería en Informatica · En Curso
 - 📍 Buenos Aires, Argentina
 
 ---
