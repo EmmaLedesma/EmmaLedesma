@@ -180,6 +180,7 @@ Manages files on S3 with automated build, test and deploy on every change.
 - 💼 **IBM** — 10+ years · IT Education, Digital Transformation, Tech Adoption · LATAM
 - 🏫 **IFTS N°18** — Técnico Superior en Análisis de Sistemas (TSAS)
 - 🏫 **Universidad de la Ciudad de Buenos Aires** — Licenciatura en Tecnologías Digitales · Articulando
+- 🏫 **Universidad de Buenos Aires** — Ingeniería en Informatica · EN Curso
 - 📍 Buenos Aires, Argentina
 
 ---
@@ -363,6 +364,7 @@ Gestiona archivos en S3 con build, test y deploy automatizados en cada cambio.
 - 💼 **IBM** — 10+ años · Educación IT, Transformación Digital · LATAM
 - 🏫 **IFTS N°18** — Técnico Superior en Análisis de Sistemas (TSAS)
 - 🏫 **Universidad de la Ciudad de Buenos Aires** — Licenciatura en Tecnologías Digitales · Articulando
+- 🏫 **Universidad de Buenos Aires** — Ingeniería en Informatica · En curso
 - 📍 Buenos Aires, Argentina
 
 🔗 [LinkedIn](https://www.linkedin.com/in/emmanuel-ledesmam)
