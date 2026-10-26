@@ -122,6 +122,33 @@ Manages files on S3 with automated build, test and deploy on every change.
 
 </td>
 </tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🐾 refugia
+Operations platform for animal shelters in Buenos Aires — the back-office layer the official city platform doesn't cover. Clinical history per animal, photo uploads and a rule-based adoption-matching engine with an explainable compatibility score. Built end-to-end on AWS, then deliberately **closed** after a real FinOps lesson.
+
+**Highlights:**
+- Node.js / Express + Sequelize on PostgreSQL (RDS), 8 versioned migrations
+- Explainable adoption matching (0–100 score) validated against real data
+- Photo upload via S3 presigned URLs (browser → S3 direct)
+- Elastic Beanstalk + RDS + S3 + CloudFront + SSM — 100% Terraform IaC ✅
+- GitHub Actions CI/CD with keyless OIDC auth
+- IAM least-privilege hardening + 8 ADRs, including a real cost incident
+- FinOps: Zero-Spend Budget after finding orphaned resources
+
+`Node.js` `Express` `PostgreSQL` `AWS` `Terraform` `GitHub Actions` `S3` `CloudFront`
+
+[![Status](https://img.shields.io/badge/status-completed_and_closed-success)](https://github.com/EmmaLedesma/refugia)
+[![FinOps](https://img.shields.io/badge/FinOps-zero--spend_budget-blue)](https://github.com/EmmaLedesma/refugia#-cierre-del-proyecto)
+
+🔗 [Repo](https://github.com/EmmaLedesma/refugia) · [Architecture decisions (ADRs)](https://github.com/EmmaLedesma/refugia/tree/main/docs/adr)
+
+</td>
+<td width="50%" valign="top">
+
+</td>
+</tr>
 </table>
 
 ---
@@ -303,6 +330,33 @@ Gestiona archivos en S3 con build, test y deploy automatizados en cada cambio.
 [![CD](https://github.com/EmmaLedesma/cloud-file-api/actions/workflows/cd.yml/badge.svg)](https://github.com/EmmaLedesma/cloud-file-api/actions/workflows/cd.yml)
 
 🔗 [API](http://3.84.95.162:3000/health) · [Repo](https://github.com/EmmaLedesma/cloud-file-api)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🐾 refugia
+Plataforma de gestión operativa para refugios de animales en CABA — la capa de back-office que la plataforma oficial de la Ciudad no cubre. Historia clínica por animal, subida de fotos y un motor de matching de adopción por reglas con score de compatibilidad explicable. Construido de punta a punta en AWS y luego **cerrado** a conciencia tras una lección real de FinOps.
+
+**Destacado:**
+- Node.js / Express + Sequelize sobre PostgreSQL (RDS), 8 migraciones versionadas
+- Matching de adopción explicable (score 0–100) validado con datos reales
+- Upload de fotos vía URLs presignadas de S3 (navegador → S3 directo)
+- Elastic Beanstalk + RDS + S3 + CloudFront + SSM — 100% Terraform IaC ✅
+- CI/CD con GitHub Actions y autenticación keyless vía OIDC
+- Hardening IAM de mínimo privilegio + 8 ADRs, incluido un incidente real de costos
+- FinOps: Zero-Spend Budget tras detectar recursos huérfanos
+
+`Node.js` `Express` `PostgreSQL` `AWS` `Terraform` `GitHub Actions` `S3` `CloudFront`
+
+[![Status](https://img.shields.io/badge/status-completo_y_cerrado-success)](https://github.com/EmmaLedesma/refugia)
+[![FinOps](https://img.shields.io/badge/FinOps-zero--spend_budget-blue)](https://github.com/EmmaLedesma/refugia#-cierre-del-proyecto)
+
+🔗 [Repo](https://github.com/EmmaLedesma/refugia) · [Decisiones de arquitectura (ADRs)](https://github.com/EmmaLedesma/refugia/tree/main/docs/adr)
+
+</td>
+<td width="50%" valign="top">
 
 </td>
 </tr>
